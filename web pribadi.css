@@ -1,0 +1,390 @@
+/* import font google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+/* untuk header */
+header {
+  z-index: 999;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: rgb(255, 145, 2);
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigasi {
+  position: relative;
+}
+
+header .navigasi a {
+  color: rgb(250, 163, 1);
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+header .navigasi a:hover {
+  color: #836c0565;
+}
+
+body {
+  min-height: 110vh;
+}
+
+/* h4 secara umum */
+h4 {
+  color: rgba(110, 80, 5, 0.514);
+}
+
+/* home */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+/* konten kiri */
+.home .content1 {
+  width: 500px;
+}
+
+.home .content1 h2 {
+  color: rgba(247, 181, 2, 0.856);
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.home .content1 h2 span {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.animasi-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animasi-text h3 {
+  color: #f7a902;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+
+  25% {
+    margin-top: -70px;
+  }
+
+  50% {
+    margin-top: -140px;
+  }
+
+  75% {
+    margin-top: -70px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.btns {
+  background-color: #ca7402;
+  color: gold;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btns:hover {
+  background: white;
+  color: #fcfcfc;
+}
+
+/* konten kanan */
+.home .content2 {
+  width: 300px;
+}
+
+/* foto di halaman home */
+.home .img {
+  border-radius: 50%;
+  width: 65vh;
+  position: relative;
+  display: flex;
+}
+
+/* about */
+.PROFILE {
+  min-height: 150vh;
+}
+
+.PROFILE .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.PROFILE .content .col-left {
+  position: relative;
+  width: 30%;
+}
+
+.PROFILE .content .col-right {
+  position: relative;
+  width: 65%;
+}
+
+.PROFILE .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+.PROFILE .content .col-left .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  align-items: center;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+  color: #ebc907e8;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+/* gallery */
+.gallery {
+  min-height: 100vh;
+}
+
+.gallery .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery .content .card {
+  width: 250px;
+  margin: 15px;
+}
+
+.gallery .content .img-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .content .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.gallery .content .img-card img:hover {
+  transform: scale(1.2);
+}
+
+#activities {
+  padding: 50px;
+  text-align: center;
+}
+
+.activity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.activity {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(4, 0, 194, 0.3);
+  transition: transform 0.3s;
+}
+
+.activity img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.activity-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.activity-overlay h3,
+.activity-overlay p {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.activity:hover {
+  transform: scale(1.1);
+}
+
+.activity:hover img {
+  transform: scale(1.2);
+}
+
+.activity:hover .activity-overlay {
+  opacity: 1;
+}
+
+
+Anda dapat men
+
+/* kontak */
+.kontak {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.kontak .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.kontak .content .card {
+  width: 100px;
+  margin: 15px;
+}
+
+.kontak .content .img-card {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.kontak .content .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.kontak .content .img-card img:hover {
+  transform: scale(1.2);
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: black;
+  color: #df9308; 
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+  color: #f19408;
+  font-weight: 600;
+  text-decoration: none;
+}
